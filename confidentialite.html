@@ -52,6 +52,10 @@
       d'historique ni transmise au développeur. Vous pouvez désactiver cette fonction à tout moment
       dans les Réglages de l'application ou retirer l'autorisation de localisation dans les
       paramètres Android.</p>
+    <p>Des <strong>notifications</strong> vous préviennent de l'arrivée détectée sur un chantier et
+      des heures pointées automatiquement, pour que vous puissiez les vérifier. Elles sont créées sur
+      le téléphone, sans passer par un serveur, et peuvent être désactivées dans les paramètres
+      Android.</p>
 
     <h2>4. Services tiers</h2>
     <ul>
@@ -59,8 +63,14 @@
         un chantier, les coordonnées GPS de ces deux lieux sont envoyées au service public
         <a href="https://project-osrm.org/">OSRM</a> (OpenStreetMap), une fois par chantier.
         Aucune autre information n'est envoyée.</li>
-      <li><strong>Recherche d'adresse</strong> : la conversion d'une adresse en position GPS utilise le
-        service de géocodage intégré à Android (fourni par Google).</li>
+      <li><strong>Recherche d'adresse</strong> : la conversion d'une adresse en position GPS, et d'une
+        position en adresse (bouton « Chantier ici »), utilise le service de géocodage intégré à
+        Android (fourni par Google).</li>
+      <li><strong>Nom de l'entreprise sur place</strong> : quand vous créez un chantier à l'endroit où
+        vous vous trouvez et que la position GPS est précise, ses coordonnées sont envoyées au service
+        public <a href="https://nominatim.org/">Nominatim</a> (OpenStreetMap) pour proposer le nom de
+        l'entreprise ou du commerce situé à cet endroit. Ce nom est seulement proposé : vous le
+        vérifiez avant d'enregistrer.</li>
       <li><strong>Google Drive</strong> : voir la section suivante.</li>
     </ul>
 
