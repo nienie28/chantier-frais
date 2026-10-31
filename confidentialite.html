@@ -69,11 +69,13 @@
     <ul>
       <li><strong>Calcul des distances</strong> : pour calculer les kilomètres entre votre domicile et
         un chantier, les coordonnées GPS de ces deux lieux sont envoyées au service public
-        <a href="https://project-osrm.org/">OSRM</a> (OpenStreetMap), une fois par chantier.
-        Aucune autre information n'est envoyée.</li>
+        d'itinéraire de la <a href="https://geoservices.ign.fr/">Géoplateforme de l'IGN</a> (État
+        français), ou à défaut au service <a href="https://project-osrm.org/">OSRM</a>
+        (OpenStreetMap), une fois par chantier. Aucune autre information n'est envoyée.</li>
       <li><strong>Recherche d'adresse</strong> : la conversion d'une adresse en position GPS, et d'une
-        position en adresse (bouton « Chantier ici »), utilise le service de géocodage intégré à
-        Android (fourni par Google).</li>
+        position en adresse (bouton « Chantier ici »), utilise la Base Adresse Nationale de la
+        Géoplateforme de l'IGN, ou à défaut le service de géocodage intégré à Android (fourni par
+        Google).</li>
       <li><strong>Nom de l'entreprise sur place</strong> : quand vous créez un chantier à l'endroit où
         vous vous trouvez et que la position GPS est précise, ses coordonnées sont envoyées au service
         public <a href="https://nominatim.org/">Nominatim</a> (OpenStreetMap) et à
